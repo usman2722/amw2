@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fire Safety & Facilities Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+ <!-- Floating Emergency Call Button -->
+ <div class="floating-emergency-btn">
+    <a href="tel:971523284847" class="emergency-call-btn">
+        <div class="btn-content">
+            <i class="fas fa-fire-extinguisher"></i>
+            <span class="btn-text">FIRE EMERGENCY</span>
+            <span class="btn-number">CALL NOW</span>
+        </div>
+        <div class="btn-shine"></div>
+    </a>
+</div>
+
+<!-- Floating WhatsApp Icon -->
+<div class="floating-whatsapp-icon">
+    <a href="https://wa.me/971523284847" target="_blank" class="whatsapp-icon-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+
+<!-- New Navigation -->
+<nav class="navbar-new">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- Brand -->
+            <a href="index.html" class="navbar-brand-new">
+                <img src="images/logo4.png" alt="AMW Logo" style="height: 50px; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); max-height: 50px; object-fit: contain;">
+                <span>AMW</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <ul class="navbar-nav-desktop">
+                <li class="nav-item-desktop">
+                    <a href="index.html" class="nav-link-desktop active">Home</a>
+                </li>
+                                    <li class="nav-item-desktop">
+                        <a href="fire-safety-services-details.html" class="nav-link-desktop">Fire Safety</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="services.html" class="nav-link-desktop">Services</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="#" class="nav-link-desktop">Facility Management</a>
+                            <div class="dropdown-menu-desktop">
+                                <!-- Hard Services with submenu -->
+                                <div class="dropdown-item-desktop">
+                                    <a href="#" class="dropdown-link d-flex justify-content-between align-items-center">
+                                        Hard Services
+                                        <i class="fas fa-chevron-right ms-2"></i>
+                                    </a>
+                                    <div class="dropdown-submenu-desktop">
+                                        <a href="mep-maintenance.html" class="dropdown-submenu-item-desktop">HVAC (Heating, Ventilation & Air Conditioning) Maintenance</a>
+                                        <a href="electrical-systems.html" class="dropdown-submenu-item-desktop">Electrical System Installation & Maintenance</a>
+                                        <a href="plumbing-sanitary.html" class="dropdown-submenu-item-desktop">Plumbing & Sanitary Contracting</a>
+                                        <a href="fire-safety-services-details.html" class="dropdown-submenu-item-desktop">Fire Fighting & Safety Equipment Installation</a>
+                                        <a href="building-fabric.html" class="dropdown-submenu-item-desktop">Building Fabric Maintenance (Walls, Doors, Windows, Roofs)</a>
+                                        <a href="elevator-escalator.html" class="dropdown-submenu-item-desktop">Elevator & Escalator Maintenance</a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Soft Services with submenu -->
+                                <div class="dropdown-item-desktop">
+                                    <a href="#" class="dropdown-link d-flex justify-content-between align-items-center">
+                                        Soft Services
+                                        <i class="fas fa-chevron-right ms-2"></i>
+                                    </a>
+                                    <div class="dropdown-submenu-desktop">
+                                        <a href="cleaning-janitorial.html" class="dropdown-submenu-item-desktop">Cleaning & Janitorial Services</a>
+                                        <a href="pest-control.html" class="dropdown-submenu-item-desktop">Pest Control</a>
+                                        <a href="security-access-control.html" class="dropdown-submenu-item-desktop">Security & Access Control</a>
+                                        <a href="disinfection-sanitization.html" class="dropdown-submenu-item-desktop">Disinfection & Sanitization</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                <li class="nav-item-desktop">
+                    <a href="about.html" class="nav-link-desktop">About</a>
+                </li>
+                <li class="nav-item-desktop">
+                    <a href="vision.html" class="nav-link-desktop">Vision</a>
+                </li>
+                <li class="nav-item-desktop">
+                    <a href="contact.html" class="nav-link-desktop">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Desktop Social Media -->
+            <div class="navbar-social-desktop">
+                <a href="#" class="nav-social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="nav-social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="nav-social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="nav-social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu-panel">
+        <!-- Mobile Menu Header -->
+        <div class="mobile-menu-header">
+            <a href="index.html" class="mobile-menu-brand">
+                <img src="images/logo4.png" alt="AMW Logo" style="height: 40px; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); max-height: 40px; object-fit: contain;">
+                <span>AMW</span>
+            </a>
+            <button class="mobile-menu-close" id="mobileMenuClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Navigation -->
+        <ul class="mobile-menu-nav">
+            <li class="mobile-menu-item">
+                <a href="index.html" class="mobile-menu-link active">Home</a>
+            </li>
+                            <li class="mobile-menu-item">
+                    <a href="fire-safety-services-details.html" class="mobile-menu-link">Fire Safety</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="services.html" class="mobile-menu-link">Services</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link">
+                        Facility Management
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                <div class="mobile-submenu">
+                                                    <div class="mobile-submenu-item">
+                                <a href="#" class="mobile-submenu-link">
+                                    Hard Services
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                        <div class="mobile-sub-submenu">
+                            <div class="mobile-sub-submenu-item">
+                                <a href="mep-maintenance.html" class="mobile-sub-submenu-link">HVAC (Heating, Ventilation & Air Conditioning) Maintenance</a>
+                            </div>
+                            <div class="mobile-sub-submenu-item">
+                                <a href="electrical-systems.html" class="mobile-sub-submenu-link">Electrical System Installation & Maintenance</a>
+                            </div>
+                            <div class="mobile-sub-submenu-item">
+                                <a href="plumbing-sanitary.html" class="mobile-sub-submenu-link">Plumbing & Sanitary Contracting</a>
+                            </div>
+                            <div class="mobile-sub-submenu-item">
+                                <a href="fire-safety-services-details.html" class="mobile-sub-submenu-link">Fire Fighting & Safety Equipment Installation</a>
+                            </div>
+                            <div class="mobile-sub-submenu-item">
+                                <a href="building-fabric.html" class="mobile-sub-submenu-link">Building Fabric Maintenance (Walls, Doors, Windows, Roofs)</a>
+                            </div>
+                            <div class="mobile-sub-submenu-item">
+                                <a href="elevator-escalator.html" class="mobile-sub-submenu-link">Elevator & Escalator Maintenance</a>
+                            </div>
+                        </div>
+                    </div>
+                                                    <div class="mobile-submenu-item">
+                                <a href="#" class="mobile-submenu-link">
+                                    Soft Services
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                        <div class="mobile-sub-submenu">
+                            <div class="mobile-sub-submenu-item">
+                                <a href="cleaning-janitorial.html" class="mobile-sub-submenu-link">Cleaning & Janitorial Services</a>
+                            </div>
+                            <div class="mobile-sub-submenu-item">
+                                <a href="pest-control.html" class="mobile-sub-submenu-link">Pest Control</a>
+                            </div>
+                            <div class="mobile-sub-submenu-item">
+                                <a href="security-access-control.html" class="mobile-sub-submenu-link">Security & Access Control</a>
+                            </div>
+                            <div class="mobile-sub-submenu-item">
+                                <a href="disinfection-sanitization.html" class="mobile-sub-submenu-link">Disinfection & Sanitization</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="about.html" class="mobile-menu-link">About</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="vision.html" class="mobile-menu-link">Vision</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="contact.html" class="mobile-menu-link">Contact</a>
+            </li>
+        </ul>
+
+        <!-- Mobile Social Media -->
+        <div class="mobile-social">
+            <div class="mobile-social-header">
+                <h6 style="color: white; margin: 0; padding: 1rem 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">Follow Us</h6>
+            </div>
+            <div class="mobile-social-links" style="padding: 0 1.5rem 1.5rem; display: flex; gap: 1rem;">
+                <a href="#" class="nav-social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="nav-social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="nav-social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="nav-social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- Hero Section -->
+  <section class="hero-section" style="background-image: url('images/contact-banner.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="hero-overlay" style="background: rgba(0, 0, 0, 0.7);">
+        <div class="container">
+            <div class="row min-vh-100 align-items-center justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="display-4 fw-bold text-white mb-4">
+                        Get In Touch With Us
+                    </h1>
+                    <p class="lead text-white mb-4">
+                        Ready to discuss your fire safety and facilities management needs? Our expert team is here to help. 
+                        Contact us today for a consultation, quote, or emergency service. We're available 24/7 to protect what matters most.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center">
+                        <a href="#contactForm" class="btn btn-danger btn-lg">
+                            <i class="fas fa-envelope me-2"></i>Send Message
+                        </a>
+                        <a href="tel:+971523284847" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-phone me-2"></i>Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   
+
+    <!-- Contact Information -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold text-dark mb-4">Send Us a Message</h2>
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label fw-bold">First Name *</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                                <div class="invalid-feedback">
+                                    Please provide your first name.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label fw-bold">Last Name *</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                                <div class="invalid-feedback">
+                                    Please provide your last name.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label fw-bold">Email Address *</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid email address.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label fw-bold">Phone Number *</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                                <div class="invalid-feedback">
+                                    Please provide your phone number.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="company" class="form-label fw-bold">Company Name</label>
+                                <input type="text" class="form-control" id="company">
+                            </div>
+                            <div class="col-12">
+                                <label for="serviceType" class="form-label fw-bold">Service Type *</label>
+                                <select class="form-select" id="serviceType" required>
+                                    <option value="">Select a service...</option>
+                                    <option value="fire-extinguisher">Fire Extinguisher Services</option>
+                                    <option value="fire-alarm">Fire Alarm Systems</option>
+                                    <option value="sprinkler">Sprinkler Systems</option>
+                                    <option value="training">Safety Training</option>
+                                    <option value="maintenance">Preventive Maintenance</option>
+                                    <option value="emergency">Emergency Service</option>
+                                    <option value="consultation">Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a service type.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label fw-bold">Message *</label>
+                                <textarea class="form-control" id="message" rows="5" required placeholder="Please describe your fire safety needs or any specific requirements..."></textarea>
+                                <div class="invalid-feedback">
+                                    Please provide a message.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="urgent" value="urgent">
+                                    <label class="form-check-label" for="urgent">
+                                        <strong>Urgent Request</strong> - Check if this is an emergency or urgent matter
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-danger btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold text-dark mb-4">Contact Information</h3>
+                            
+                            <div class="contact-item mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="contact-icon me-3">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Address</h6>
+                                        <p class="text-muted mb-0">
+                                            C1 buidling<br>
+                                            Office no 82<br>
+                                            United arab emirates
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="contact-icon me-3">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Phone</h6>
+                                        <p class="text-muted mb-0">
+                                            <a href="tel:+971523284847" class="text-decoration-none">+971 52 328 4847</a><br>
+                                            <small class="text-danger">24/7 Emergency: +971 52 328 4847</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="contact-icon me-3">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Email</h6>
+                                        <p class="text-muted mb-0">
+                                            <a href="mailto:info@amw-fm.com" class="text-decoration-none">info@amw-fm.com</a><br>
+                                            <a href="mailto:emergency@amw-fm.com" class="text-decoration-none">emergency@amw-fm.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="contact-icon me-3">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Business Hours</h6>
+                                        <p class="text-muted mb-0">
+                                            Monday - Friday: 8:00 AM - 6:00 PM<br>
+                                            Saturday: 9:00 AM - 3:00 PM<br>
+                                            Sunday: Emergency Service Only
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="d-flex align-items-start">
+                                    <div class="contact-icon me-3">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Emergency Service</h6>
+                                        <p class="text-muted mb-0">
+                                            24/7 emergency response available<br>
+                                            Response time: Under 30 minutes
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <!-- <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold text-dark mb-3">Find Us</h2>
+                    <p class="lead text-muted">
+                        Visit our office or call us for immediate assistance
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-0">
+                            <div class="map-placeholder">
+                                <div class="map-content">
+                                    <i class="fas fa-map-marked-alt mb-3"></i>
+                                    <h4 class="fw-bold">Interactive Map</h4>
+                                    <p class="text-muted">C1 buidling, Office no 82, United arab emirates</p>
+                                    <a href="https://maps.google.com" target="_blank" class="btn btn-danger">
+                                        <i class="fas fa-directions me-2"></i>Get Directions
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-danger text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3 class="fw-bold mb-3">Need Immediate Assistance?</h3>
+                    <p class="lead mb-0">
+                        For emergencies or urgent fire safety concerns, call our 24/7 emergency hotline.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="tel:+971523284847" class="btn btn-light btn-lg">
+                        <i class="fas fa-phone me-2"></i>Emergency: +971 52 328 4847
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <!-- Main Footer Content -->
+            <div class="row g-4 mb-4">
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-section">
+                        <h5 class="fw-bold mb-3" style="display: flex; align-items: center; gap: 0;">
+                            <img src="images/logo4.png" alt="AMW Logo" style="height: 50px; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); mix-blend-mode: color-dodge;">
+                            <span style="color: white; line-height: 50px;">AMW</span>
+                        </h5>
+                        <p class="text-muted mb-3">
+                            Your trusted partner in fire safety and facilities management for over 15 years. 
+                            We protect lives and property with innovative solutions and certified expertise.
+                        </p>
+
+                        <!-- Social Media -->
+                        <div class="social-links mt-3">
+                            <h6 class="fw-bold mb-2">Follow Us</h6>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fire Safety Services -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">Fire Safety Services</h6>
+                        <ul class="footer-links">
+                            <li><a href="services.html#fire-extinguishers">Fire Extinguishers</a></li>
+                            <li><a href="services.html#alarm-systems">Fire Alarm Systems</a></li>
+                            <li><a href="services.html#sprinklers">Sprinkler Systems</a></li>
+                            <li><a href="services.html#emergency-lighting">Emergency Lighting</a></li>
+                            <li><a href="services.html#fire-hydrants">Fire Hydrants</a></li>
+                            <li><a href="services.html#training">Safety Training</a></li>
+                            <li><a href="services.html#inspection">Fire Safety Inspection</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Facility Management Services -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">Facility Management</h6>
+                        <ul class="footer-links">
+                            <li><a href="services.html#hvac">HVAC Maintenance</a></li>
+                            <li><a href="services.html#electrical">Electrical Systems</a></li>
+                            <li><a href="services.html#plumbing">Plumbing Services</a></li>
+                            <li><a href="services.html#elevator">Elevator & Escalator</a></li>
+                            <li><a href="services.html#security">Security & Access Control</a></li>
+                            <li><a href="services.html#cleaning">Cleaning & Janitorial</a></li>
+                            <li><a href="services.html#pest-control">Pest Control</a></li>
+                            <li><a href="services.html#disinfection">Disinfection Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">All Services</a></li>
+                            <li><a href="vision.html">Our Vision</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="contactus.html">Get In Touch</a></li>
+                            <li><a href="services.html#emergency">Emergency Services</a></li>
+                            <li><a href="services.html#maintenance">Maintenance Plans</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">Contact Information</h6>
+                        <div class="contact-info">
+                                                        <div class="contact-item mb-3 p-2 rounded">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt text-danger me-3"></i>
+                                    <span class="text-muted small">C1 buidling
+                                        Office no 82 
+                                        United arab emirates</span>
+                                </div>
+                            </div>
+                            <div class="contact-item mb-3 p-2 rounded">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-phone text-danger me-3"></i>
+                                    <span class="text-muted small">+971 52 328 4847</span>
+                                </div>
+                            </div>
+                            <div class="contact-item mb-3 p-2 rounded">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-envelope text-danger me-3"></i>
+                                    <span class="text-muted small"> info@amw-fm.com </span>
+                                </div>
+                            </div>
+                            <div class="contact-item mb-3 p-2 rounded">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-clock text-danger me-3"></i>
+                                    <span class="text-muted small">24/7 Emergency Response</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="mb-0">&copy; 2025 AMW. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <!-- <button id="backToTop" class="btn btn-danger position-fixed d-none" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); console.log('HTML onclick triggered');" style="z-index: 9999; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); background-color: #dc3545 !important; cursor: pointer; bottom: 20px; right: 120px;">
+        <i class="fas fa-arrow-up" style="color: white !important;"></i>
+    </button> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // New Navbar Functionality
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-new');
+            if (navbar) {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+        });
+
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+        // Open mobile menu
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        // Close mobile menu
+        mobileMenuClose.addEventListener('click', function() {
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close mobile menu when clicking overlay
+        mobileMenuOverlay.addEventListener('click', function(e) {
+            if (e.target === mobileMenuOverlay) {
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Toggle submenus (first level)
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const hasSubmenu = this.nextElementSibling && this.nextElementSibling.classList.contains('mobile-submenu');
+                
+                if (hasSubmenu) {
+                    e.preventDefault();
+                    
+                    // Toggle current link active state
+                    this.classList.toggle('active');
+                    
+                    // Toggle submenu
+                    this.nextElementSibling.classList.toggle('active');
+                }
+            });
+        });
+
+        // Toggle sub-submenus (second level)
+        const mobileSubmenuLinks = document.querySelectorAll('.mobile-submenu-link');
+        mobileSubmenuLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const hasSubSubmenu = this.nextElementSibling && this.nextElementSibling.classList.contains('mobile-sub-submenu');
+                
+                if (hasSubSubmenu) {
+                    e.preventDefault();
+                    
+                    // Toggle current link active state
+                    this.classList.toggle('active');
+                    
+                    // Toggle sub-submenu
+                    this.nextElementSibling.classList.toggle('active');
+                }
+            });
+        });
+
+        // Close mobile menu on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && mobileMenuOverlay.classList.contains('active')) {
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Contact Form Validation
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Basic form validation
+                    const firstName = document.getElementById('firstName').value.trim();
+                    const lastName = document.getElementById('lastName').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const phone = document.getElementById('phone').value.trim();
+                    const serviceType = document.getElementById('serviceType').value;
+                    const message = document.getElementById('message').value.trim();
+                    
+                    let isValid = true;
+                    
+                    // Reset previous validation states
+                    contactForm.classList.remove('was-validated');
+                    
+                    // Validate required fields
+                    if (!firstName) {
+                        document.getElementById('firstName').classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        document.getElementById('firstName').classList.remove('is-invalid');
+                        document.getElementById('firstName').classList.add('is-valid');
+                    }
+                    
+                    if (!lastName) {
+                        document.getElementById('lastName').classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        document.getElementById('lastName').classList.remove('is-invalid');
+                        document.getElementById('lastName').classList.add('is-valid');
+                    }
+                    
+                    if (!email || !isValidEmail(email)) {
+                        document.getElementById('email').classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        document.getElementById('email').classList.remove('is-invalid');
+                        document.getElementById('email').classList.add('is-valid');
+                    }
+                    
+                    if (!phone) {
+                        document.getElementById('phone').classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        document.getElementById('phone').classList.remove('is-invalid');
+                        document.getElementById('phone').classList.add('is-valid');
+                    }
+                    
+                    if (!serviceType) {
+                        document.getElementById('serviceType').classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        document.getElementById('serviceType').classList.remove('is-invalid');
+                        document.getElementById('serviceType').classList.add('is-valid');
+                    }
+                    
+                    if (!message) {
+                        document.getElementById('message').classList.add('is-invalid');
+                        isValid = false;
+                    } else {
+                        document.getElementById('message').classList.remove('is-invalid');
+                        document.getElementById('message').classList.add('is-valid');
+                    }
+                    
+                    if (isValid) {
+                        // Show success message
+                        showSuccessMessage();
+                        // Reset form
+                        contactForm.reset();
+                        // Remove validation classes
+                        const formControls = contactForm.querySelectorAll('.form-control, .form-select');
+                        formControls.forEach(control => {
+                            control.classList.remove('is-valid', 'is-invalid');
+                        });
+                    }
+                });
+            }
+            
+            // Email validation function
+            function isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+            
+            // Success message function
+            function showSuccessMessage() {
+                const successAlert = document.createElement('div');
+                successAlert.className = 'alert alert-success alert-dismissible fade show';
+                successAlert.innerHTML = `
+                    <i class="fas fa-check-circle me-2"></i>
+                    Thank you! Your message has been sent successfully. We'll get back to you soon.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                `;
+                
+                const formContainer = contactForm.parentElement;
+                formContainer.insertBefore(successAlert, contactForm);
+                
+                // Auto-dismiss after 5 seconds
+                setTimeout(() => {
+                    if (successAlert.parentElement) {
+                        successAlert.remove();
+                    }
+                }, 5000);
+            }
+        });
+    </script>
+</body>
+</html> 

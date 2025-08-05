@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Fighting & Safety Equipment Installation - AMW</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="fire-fighting-safety">
+    <!-- Floating Emergency Call Button -->
+    <div class="floating-emergency-btn">
+        <a href="tel:971523284847" class="emergency-call-btn">
+            <div class="btn-content">
+                <i class="fas fa-fire-extinguisher"></i>
+                <span class="btn-text">FIRE EMERGENCY</span>
+                <span class="btn-number">CALL NOW</span>
+            </div>
+            <div class="btn-shine"></div>
+        </a>
+    </div>
+
+    <!-- Floating WhatsApp Icon -->
+    <div class="floating-whatsapp-icon">
+        <a href="https://wa.me/971523284847" target="_blank" class="whatsapp-icon-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar-new">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Brand -->
+                <a href="index.html" class="navbar-brand-new">
+                    <img src="images/logo4.png" alt="AMW Logo" style="height: 50px; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); max-height: 50px; object-fit: contain;">
+                    <span>AMW</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <ul class="navbar-nav-desktop">
+                    <li class="nav-item-desktop">
+                        <a href="index.html" class="nav-link-desktop">Home</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="fire-safety-services-details.html" class="nav-link-desktop active">Fire Safety</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="services.html" class="nav-link-desktop">Services</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="#" class="nav-link-desktop">Facility Management</a>
+                        <div class="dropdown-menu-desktop">
+                            <!-- Hard Services with submenu -->
+                            <div class="dropdown-item-desktop">
+                                <a href="#" class="dropdown-link d-flex justify-content-between align-items-center">
+                                    Hard Services
+                                    <i class="fas fa-chevron-right ms-2"></i>
+                                </a>
+                                <div class="dropdown-submenu-desktop">
+                                    <a href="mep-maintenance.html" class="dropdown-submenu-item-desktop">HVAC (Heating, Ventilation & Air Conditioning) Maintenance</a>
+                                    <a href="electrical-systems.html" class="dropdown-submenu-item-desktop">Electrical System Installation & Maintenance</a>
+                                    <a href="plumbing-sanitary.html" class="dropdown-submenu-item-desktop">Plumbing & Sanitary Contracting</a>
+                                    <a href="fire-safety-services-details.html" class="dropdown-submenu-item-desktop active">Fire Fighting & Safety Equipment Installation</a>
+                                    <a href="building-fabric.html" class="dropdown-submenu-item-desktop">Building Fabric Maintenance (Walls, Doors, Windows, Roofs)</a>
+                                    <a href="elevator-escalator.html" class="dropdown-submenu-item-desktop">Elevator & Escalator Maintenance</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Soft Services with submenu -->
+                            <div class="dropdown-item-desktop">
+                                <a href="#" class="dropdown-link d-flex justify-content-between align-items-center">
+                                    Soft Services
+                                    <i class="fas fa-chevron-right ms-2"></i>
+                                </a>
+                                <div class="dropdown-submenu-desktop">
+                                    <a href="cleaning-janitorial.html" class="dropdown-submenu-item-desktop">Cleaning & Janitorial Services</a>
+                                    <a href="pest-control.html" class="dropdown-submenu-item-desktop">Pest Control</a>
+                                    <a href="security-access-control.html" class="dropdown-submenu-item-desktop">Security & Access Control</a>
+                                    <a href="disinfection-sanitization.html" class="dropdown-submenu-item-desktop">Disinfection & Sanitization</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="about.html" class="nav-link-desktop">About</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="vision.html" class="nav-link-desktop">Vision</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="contact.html" class="nav-link-desktop">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Desktop Social Media -->
+                <div class="navbar-social-desktop">
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobileMenuOverlay" class="mobile-menu-overlay">
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-header">
+                    <a href="index.html" class="mobile-brand">
+                        <img src="images/logo4.png" alt="AMW Logo" style="height: 40px; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); max-height: 40px; object-fit: contain;">
+                        <span>AMW</span>
+                    </a>
+                    <button id="mobileMenuClose" class="mobile-menu-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <ul class="mobile-menu">
+                    <li class="mobile-menu-item">
+                        <a href="index.html" class="mobile-menu-link">Home</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="fire-safety-services-details.html" class="mobile-menu-link active">Fire Safety</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="services.html" class="mobile-menu-link">Services</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="#" class="mobile-menu-link d-flex justify-content-between align-items-center">
+                            Facility Management
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="mobile-submenu">
+                            <li class="mobile-submenu-item">
+                                <a href="#" class="mobile-submenu-link d-flex justify-content-between align-items-center">
+                                    Hard Services
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="mobile-sub-submenu">
+                                    <li><a href="mep-maintenance.html" class="mobile-sub-submenu-link">HVAC (Heating, Ventilation & Air Conditioning) Maintenance</a></li>
+                                    <li><a href="electrical-systems.html" class="mobile-sub-submenu-link">Electrical System Installation & Maintenance</a></li>
+                                    <li><a href="plumbing-sanitary.html" class="mobile-sub-submenu-link">Plumbing & Sanitary Contracting</a></li>
+                                    <li><a href="fire-safety-services-details.html" class="mobile-sub-submenu-link active">Fire Fighting & Safety Equipment Installation</a></li>
+                                    <li><a href="building-fabric.html" class="mobile-sub-submenu-link">Building Fabric Maintenance (Walls, Doors, Windows, Roofs)</a></li>
+                                    <li><a href="elevator-escalator.html" class="mobile-sub-submenu-link">Elevator & Escalator Maintenance</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile-submenu-item">
+                                <a href="#" class="mobile-submenu-link d-flex justify-content-between align-items-center">
+                                    Soft Services
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="mobile-sub-submenu">
+                                    <li><a href="cleaning-janitorial.html" class="mobile-sub-submenu-link">Cleaning & Janitorial Services</a></li>
+                                    <li><a href="pest-control.html" class="mobile-sub-submenu-link">Pest Control</a></li>
+                                    <li><a href="security-access-control.html" class="mobile-sub-submenu-link">Security & Access Control</a></li>
+                                    <li><a href="disinfection-sanitization.html" class="mobile-sub-submenu-link">Disinfection & Sanitization</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="about.html" class="mobile-menu-link">About</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="contact.html" class="mobile-menu-link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile Social Media -->
+                <div class="mobile-social">
+                    <a href="#" class="mobile-social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="mobile-social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="mobile-social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="mobile-social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="row min-vh-100 align-items-center">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="display-4 fw-bold text-white mb-4">
+                            Fire Fighting & Safety Equipment Installation
+                        </h1>
+                        <p class="lead text-white mb-4">
+                            Professional installation and maintenance of fire safety equipment to protect your property and people. 
+                            From fire extinguishers to advanced suppression systems, we ensure your safety compliance.
+                        </p>
+                        <div class="d-flex gap-3 justify-content-center">
+                            <a href="contact.html" class="btn btn-danger btn-lg px-4 py-2">
+                                <i class="fas fa-phone me-2"></i>Get Emergency Quote
+                            </a>
+                            <a href="#services" class="btn btn-outline-light btn-lg px-4 py-2">
+                                <i class="fas fa-info-circle me-2"></i>Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fire Safety Equipment Overview Section -->
+    <section class="pt-3 pb-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="fire-safety-content">
+                        <h2 class="display-5 fw-bold text-dark mb-4">Complete Fire Safety Solutions</h2>
+                        <p class="lead text-muted mb-4">
+                            Our comprehensive fire fighting and safety equipment installation services cover every aspect of fire protection, from basic extinguishers to advanced automated systems.
+                        </p>
+                        <p class="text-muted mb-4">
+                            With certified technicians and state-of-the-art equipment, we ensure your facility meets all fire safety regulations and provides maximum protection for occupants and assets.
+                        </p>
+                        <div class="fire-safety-features">
+                            <div class="feature-item mb-3">
+                                <i class="fas fa-check-circle text-danger me-3"></i>
+                                <span class="fw-bold">Certified Installation Technicians</span>
+                            </div>
+                            <div class="feature-item mb-3">
+                                <i class="fas fa-check-circle text-danger me-3"></i>
+                                <span class="fw-bold">Compliance with Safety Standards</span>
+                            </div>
+                            <div class="feature-item mb-3">
+                                <i class="fas fa-check-circle text-danger me-3"></i>
+                                <span class="fw-bold">24/7 Emergency Response</span>
+                            </div>
+                            <div class="feature-item mb-3">
+                                <i class="fas fa-check-circle text-danger me-3"></i>
+                                <span class="fw-bold">Regular Maintenance & Testing</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-danger btn-lg mt-3 me-3">
+                            <i class="fas fa-phone me-2"></i>Schedule Installation
+                        </a>
+                        <a href="fire-safety-services-details.html" class="btn btn-outline-danger btn-lg mt-3">
+                            <i class="fas fa-list me-2"></i>View All Services
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="fire-safety-image-container">
+                        <img src="images/fire4.jpg" alt="Professional Fire Safety Equipment" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fire Safety Equipment Gallery Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold text-dark mb-3">State-of-the-Art Fire Safety Equipment</h2>
+                    <p class="lead text-muted">Professional installation and maintenance of cutting-edge fire safety systems</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="fire-equipment-card">
+                        <div class="fire-equipment-image">
+                            <img src="images/fire2.jpg" alt="Advanced Fire Detection Systems" class="img-fluid rounded shadow-lg">
+                        </div>
+                        <div class="fire-equipment-content p-4">
+                            <h4 class="fw-bold text-dark mb-3">
+                                <i class="fas fa-bell text-danger me-2"></i>Advanced Fire Detection
+                            </h4>
+                            <p class="text-muted mb-3">
+                                Our cutting-edge fire detection systems provide early warning capabilities with advanced smoke and heat sensors. These systems are designed to detect fires at their earliest stages, giving occupants maximum time to evacuate safely.
+                            </p>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-2"><i class="fas fa-check text-danger me-2"></i>Multi-sensor detection technology</li>
+                                <li class="mb-2"><i class="fas fa-check text-danger me-2"></i>Real-time monitoring and alerts</li>
+                                <li class="mb-2"><i class="fas fa-check text-danger me-2"></i>Integration with building management systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                                         <div class="fire-equipment-card">
+                         <div class="fire-equipment-image">
+                             <img src="images/fire1.jpeg" alt="Professional Fire Suppression Systems" class="img-fluid rounded shadow-lg">
+                         </div>
+                        <div class="fire-equipment-content p-4">
+                            <h4 class="fw-bold text-dark mb-3">
+                                <i class="fas fa-tint text-danger me-2"></i>Fire Suppression Systems
+                            </h4>
+                            <p class="text-muted mb-3">
+                                Automated fire suppression systems that activate instantly when fire is detected. Our sprinkler systems are strategically designed to provide optimal coverage and rapid response to contain fires before they spread.
+                            </p>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-2"><i class="fas fa-check text-danger me-2"></i>Automatic activation systems</li>
+                                <li class="mb-2"><i class="fas fa-check text-danger me-2"></i>Strategic coverage planning</li>
+                                <li class="mb-2"><i class="fas fa-check text-danger me-2"></i>Water flow optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                                 <div class="col-lg-4 col-md-6">
+                     <div class="fire-equipment-card">
+                         <div class="fire-equipment-image">
+                             <img src="images/Fire Suppression Systems.jpeg" alt="Emergency Response Equipment" class="img-fluid rounded shadow-lg">
+                         </div>
+                        <div class="fire-equipment-content p-4">
+                            <h4 class="fw-bold text-dark mb-3">
+                                <i class="fas fa-fire-extinguisher text-danger me-2"></i>Emergency Response Equipment
+                            </h4>
+                            <p class="text-muted mb-3">
+                                Comprehensive emergency response equipment including portable fire extinguishers, emergency lighting, and evacuation systems. Every piece of equipment is strategically placed for maximum accessibility during emergencies.
+                            </p>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-2"><i class="fas fa-check text-danger me-2"></i>Strategic equipment placement</li>
+                                <li class="mb-2"><i class="fas fa-check text-danger me-2"></i>Regular maintenance schedules</li>
+                                <li class="mb-2"><i class="fas fa-check text-danger me-2"></i>Staff training programs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold text-dark mb-3">Our Fire Safety Equipment Services</h2>
+                    <p class="lead text-muted">Comprehensive fire safety solutions for all types of facilities</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm stagger-item">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-fire-extinguisher"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Fire Extinguisher Installation</h5>
+                            <p class="card-text text-muted">
+                                Professional installation and placement of fire extinguishers according to safety regulations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm stagger-item">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Fire Alarm Systems</h5>
+                            <p class="card-text text-muted">
+                                Complete fire alarm system installation including smoke detectors and emergency notification.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm stagger-item">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Sprinkler Systems</h5>
+                            <p class="card-text text-muted">
+                                Automated fire suppression systems with sprinklers designed for optimal coverage.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Process Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold text-dark mb-3">Our Installation Process</h2>
+                    <p class="lead text-muted">A systematic approach to professional fire safety equipment installation</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-card text-center stagger-item">
+                        <div class="process-number mb-3">1</div>
+                        <h5 class="fw-bold">Site Assessment</h5>
+                        <p class="text-muted">Comprehensive evaluation of facility and fire safety requirements</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-card text-center stagger-item">
+                        <div class="process-number mb-3">2</div>
+                        <h5 class="fw-bold">System Design</h5>
+                        <p class="text-muted">Custom fire safety system design and equipment selection</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-card text-center stagger-item">
+                        <div class="process-number mb-3">3</div>
+                        <h5 class="fw-bold">Professional Installation</h5>
+                        <p class="text-muted">Certified technicians install all equipment to safety standards</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-card text-center stagger-item">
+                        <div class="process-number mb-3">4</div>
+                        <h5 class="fw-bold">Testing & Certification</h5>
+                        <p class="text-muted">Comprehensive testing and compliance certification</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency CTA Section -->
+    <section class="py-5 bg-danger text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3 class="fw-bold mb-3">Need Fire Safety Equipment Installed?</h3>
+                    <p class="lead mb-0">
+                        Don't wait for an emergency. Get professional fire safety equipment installation to protect your facility.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="contact.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-phone me-2"></i>Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-section">
+                        <h5 class="fw-bold mb-3" style="display: flex; align-items: center; gap: 0;">
+                            <img src="images/logo4.png" alt="AMW Logo" style="height: 50px; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); mix-blend-mode: color-dodge;">
+                            <span style="color: white; line-height: 50px;">AMW</span>
+                        </h5>
+                        <p class="text-muted mb-3">
+                            Your trusted partner in fire safety and facilities management for over 15 years. 
+                            We protect lives and property with innovative solutions and certified expertise.
+                        </p>
+                    </div>
+                </div>
+                <!-- Fire Safety Services -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">Fire Safety Services</h6>
+                        <ul class="footer-links">
+                            <li><a href="services.html#fire-extinguishers">Fire Extinguishers</a></li>
+                            <li><a href="services.html#alarm-systems">Fire Alarm Systems</a></li>
+                            <li><a href="services.html#sprinklers">Sprinkler Systems</a></li>
+                            <li><a href="services.html#emergency-lighting">Emergency Lighting</a></li>
+                            <li><a href="services.html#fire-hydrants">Fire Hydrants</a></li>
+                            <li><a href="services.html#training">Safety Training</a></li>
+                            <li><a href="services.html#inspection">Fire Safety Inspection</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Facility Management Services -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">Facility Management</h6>
+                        <ul class="footer-links">
+                            <li><a href="services.html#hvac">HVAC Maintenance</a></li>
+                            <li><a href="services.html#electrical">Electrical Systems</a></li>
+                            <li><a href="services.html#plumbing">Plumbing Services</a></li>
+                            <li><a href="services.html#elevator">Elevator & Escalator</a></li>
+                            <li><a href="services.html#security">Security & Access Control</a></li>
+                            <li><a href="services.html#cleaning">Cleaning & Janitorial</a></li>
+                            <li><a href="services.html#pest-control">Pest Control</a></li>
+                            <li><a href="services.html#disinfection">Disinfection Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">All Services</a></li>
+                            <li><a href="vision.html">Our Vision</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="contactus.html">Get In Touch</a></li>
+                            <li><a href="services.html#emergency">Emergency Services</a></li>
+                            <li><a href="services.html#maintenance">Maintenance Plans</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">Contact Information</h6>
+                        <div class="contact-info">
+                            <div class="contact-item mb-3 p-2 rounded">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt text-danger me-3"></i>
+                                    <span class="text-muted small">C1 buidling
+                                        Office no 82 
+                                        United arab emirates</span>
+                                </div>
+                            </div>
+                            <div class="contact-item mb-3 p-2 rounded">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-phone text-danger me-3"></i>
+                                    <span class="text-muted small">+971 52 328 4847</span>
+                                </div>
+                            </div>
+                            <div class="contact-item mb-3 p-2 rounded">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-envelope text-danger me-3"></i>
+                                    <span class="text-muted small"> info@amw-fm.com </span>
+                                </div>
+                            </div>
+                            <div class="contact-item mb-3 p-2 rounded">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-clock text-danger me-3"></i>
+                                    <span class="text-muted small">24/7 Emergency Response</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="mb-0">&copy; 2025 AMW. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <!-- <button id="backToTop" class="btn btn-danger position-fixed d-none" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); console.log('HTML onclick triggered');" style="z-index: 9999; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); background-color: #dc3545 !important; cursor: pointer; bottom: 20px; right: 120px;">
+        <i class="fas fa-arrow-up" style="color: white !important;"></i>
+    </button> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // New Navbar Functionality
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-new');
+            if (navbar) {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+        });
+
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+        // Open mobile menu
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        // Close mobile menu
+        mobileMenuClose.addEventListener('click', function() {
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close mobile menu when clicking overlay
+        mobileMenuOverlay.addEventListener('click', function(e) {
+            if (e.target === mobileMenuOverlay) {
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Toggle submenus (first level)
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const hasSubmenu = this.nextElementSibling && this.nextElementSibling.classList.contains('mobile-submenu');
+                
+                if (hasSubmenu) {
+                    e.preventDefault();
+                    
+                    // Toggle current link active state
+                    this.classList.toggle('active');
+                    
+                    // Toggle submenu
+                    this.nextElementSibling.classList.toggle('active');
+                }
+            });
+        });
+
+        // Toggle sub-submenus (second level)
+        const mobileSubmenuLinks = document.querySelectorAll('.mobile-submenu-link');
+        mobileSubmenuLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const hasSubSubmenu = this.nextElementSibling && this.nextElementSibling.classList.contains('mobile-sub-submenu');
+                
+                if (hasSubSubmenu) {
+                    e.preventDefault();
+                    
+                    // Toggle current link active state
+                    this.classList.toggle('active');
+                    
+                    // Toggle sub-submenu
+                    this.nextElementSibling.classList.toggle('active');
+                }
+            });
+        });
+
+        // Close mobile menu on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && mobileMenuOverlay.classList.contains('active')) {
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body>
+</html> 

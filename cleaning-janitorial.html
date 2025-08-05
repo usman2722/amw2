@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning & Janitorial Services - AMW Fire Safety & Facility Management</title>
+    <meta name="description" content="Professional cleaning and janitorial services. Trust AMW for comprehensive facility cleaning, maintenance, and hygiene solutions.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="cleaning-janitorial">
+    <!-- Floating Emergency Call Button -->
+    <div class="floating-emergency-btn">
+        <a href="tel:971523284847" class="emergency-call-btn">
+            <div class="btn-content">
+                <i class="fas fa-fire-extinguisher"></i>
+                <span class="btn-text">FIRE EMERGENCY</span>
+                <span class="btn-number">CALL NOW</span>
+            </div>
+            <div class="btn-shine"></div>
+        </a>
+    </div>
+
+    <!-- Floating WhatsApp Icon -->
+    <div class="floating-whatsapp-icon">
+        <a href="https://wa.me/971523284847" target="_blank" class="whatsapp-icon-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar-new">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Brand -->
+                <a href="index.html" class="navbar-brand-new">
+                    <img src="images/logo4.png" alt="AMW Logo" style="height: 50px; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); max-height: 50px; object-fit: contain;">
+                    <span>AMW</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <ul class="navbar-nav-desktop">
+                    <li class="nav-item-desktop">
+                        <a href="index.html" class="nav-link-desktop">Home</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="fire-safety-services-details.html" class="nav-link-desktop">Fire Safety</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="services.html" class="nav-link-desktop">Services</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="#" class="nav-link-desktop active">Facility Management</a>
+                        <div class="dropdown-menu-desktop">
+                            <!-- Hard Services with submenu -->
+                            <div class="dropdown-item-desktop">
+                                <a href="#" class="dropdown-link d-flex justify-content-between align-items-center">
+                                    Hard Services
+                                    <i class="fas fa-chevron-right ms-2"></i>
+                                </a>
+                                <div class="dropdown-submenu-desktop">
+                                    <a href="mep-maintenance.html" class="dropdown-submenu-item-desktop">HVAC (Heating, Ventilation & Air Conditioning) Maintenance</a>
+                                    <a href="electrical-systems.html" class="dropdown-submenu-item-desktop">Electrical System Installation & Maintenance</a>
+                                    <a href="plumbing-sanitary.html" class="dropdown-submenu-item-desktop">Plumbing & Sanitary Contracting</a>
+                                    <a href="fire-safety-services-details.html" class="dropdown-submenu-item-desktop">Fire Fighting & Safety Equipment Installation</a>
+                                    <a href="building-fabric.html" class="dropdown-submenu-item-desktop">Building Fabric Maintenance (Walls, Doors, Windows, Roofs)</a>
+                                    <a href="elevator-escalator.html" class="dropdown-submenu-item-desktop">Elevator & Escalator Maintenance</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Soft Services with submenu -->
+                            <div class="dropdown-item-desktop">
+                                <a href="#" class="dropdown-link d-flex justify-content-between align-items-center">
+                                    Soft Services
+                                    <i class="fas fa-chevron-right ms-2"></i>
+                                </a>
+                                <div class="dropdown-submenu-desktop">
+                                    <a href="cleaning-janitorial.html" class="dropdown-submenu-item-desktop active">Cleaning & Janitorial Services</a>
+                                    <a href="pest-control.html" class="dropdown-submenu-item-desktop">Pest Control</a>
+                                    <a href="security-access-control.html" class="dropdown-submenu-item-desktop">Security & Access Control</a>
+                                    <a href="disinfection-sanitization.html" class="dropdown-submenu-item-desktop">Disinfection & Sanitization</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="about.html" class="nav-link-desktop">About</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="vision.html" class="nav-link-desktop">Vision</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="contact.html" class="nav-link-desktop">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Desktop Social Media -->
+                <div class="navbar-social-desktop">
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-panel">
+            <!-- Mobile Menu Header -->
+            <div class="mobile-menu-header">
+                <a href="index.html" class="mobile-menu-brand">
+                    <img src="images/logo4.png" alt="AMW Logo" style="height: 40px; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); max-height: 40px; object-fit: contain;">
+                    <span>AMW</span>
+                </a>
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Navigation -->
+            <ul class="mobile-menu-nav">
+                <li class="mobile-menu-item">
+                    <a href="index.html" class="mobile-menu-link">Home</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="fire-safety-services-details.html" class="mobile-menu-link">Fire Safety</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="services.html" class="mobile-menu-link">Services</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link active">
+                        Facility Management
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="mobile-submenu">
+                        <div class="mobile-submenu-item">
+                            <a href="#" class="mobile-submenu-link">
+                                Hard Services
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="mobile-sub-submenu">
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="mep-maintenance.html" class="mobile-sub-submenu-link">HVAC (Heating, Ventilation & Air Conditioning) Maintenance</a>
+                                </div>
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="electrical-systems.html" class="mobile-sub-submenu-link">Electrical System Installation & Maintenance</a>
+                                </div>
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="plumbing-sanitary.html" class="mobile-sub-submenu-link">Plumbing & Sanitary Contracting</a>
+                                </div>
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="fire-safety-services-details.html" class="mobile-sub-submenu-link">Fire Fighting & Safety Equipment Installation</a>
+                                </div>
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="building-fabric.html" class="mobile-sub-submenu-link">Building Fabric Maintenance (Walls, Doors, Windows, Roofs)</a>
+                                </div>
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="elevator-escalator.html" class="mobile-sub-submenu-link">Elevator & Escalator Maintenance</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-submenu-item">
+                            <a href="#" class="mobile-submenu-link active">
+                                Soft Services
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="mobile-sub-submenu">
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="cleaning-janitorial.html" class="mobile-sub-submenu-link active">Cleaning & Janitorial Services</a>
+                                </div>
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="pest-control.html" class="mobile-sub-submenu-link">Pest Control</a>
+                                </div>
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="security-access-control.html" class="mobile-sub-submenu-link">Security & Access Control</a>
+                                </div>
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="disinfection-sanitization.html" class="mobile-sub-submenu-link">Disinfection & Sanitization</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="about.html" class="mobile-menu-link">About</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="contact.html" class="mobile-menu-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Mobile Social Media -->
+            <div class="mobile-social">
+                <div class="mobile-social-header">
+                    <h6 style="color: white; margin: 0; padding: 1rem 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">Follow Us</h6>
+                </div>
+                <div class="mobile-social-links" style="padding: 0 1.5rem 1.5rem; display: flex; gap: 1rem;">
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-image: url('images/cleaning.jpeg'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="hero-overlay" style="background: rgba(0, 0, 0, 0.6);">
+            <div class="container">
+                <div class="row min-vh-100 align-items-center">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="display-4 fw-bold text-white mb-4">
+                            Cleaning & Janitorial Services
+                        </h1>
+                        <p class="lead text-white mb-4">
+                            Professional cleaning and janitorial services ensuring pristine facilities, enhanced hygiene, and healthy environments. Trust our certified cleaning professionals for comprehensive facility maintenance.
+                        </p>
+                        <div class="d-flex gap-3 justify-content-center">
+                            <a href="contact.html" class="btn btn-danger btn-lg">
+                                <i class="fas fa-phone me-2"></i>Get a Quote
+                            </a>
+                            <a href="#services" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-info-circle me-2"></i>Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cleaning Services Overview Section -->
+    <section class="pt-3 pb-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold text-dark mb-4">Complete Facility Cleaning Solutions</h2>
+                    <p class="lead text-muted mb-4">
+                        We provide comprehensive cleaning and janitorial services with specialized expertise in commercial, industrial, and residential facility maintenance.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Cleaning Services Grid -->
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="cleaning-card text-center p-4 bg-light rounded shadow-sm h-100">
+                        <div class="cleaning-icon mb-3">
+                            <i class="fas fa-building text-danger" style="font-size: 3rem;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Commercial Cleaning</h5>
+                        <p class="text-muted">Office buildings, retail spaces, and commercial facilities with daily maintenance</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="cleaning-card text-center p-4 bg-light rounded shadow-sm h-100">
+                        <div class="cleaning-icon mb-3">
+                            <i class="fas fa-industry text-danger" style="font-size: 3rem;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Industrial Cleaning</h5>
+                        <p class="text-muted">Manufacturing facilities, warehouses, and industrial environments</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="cleaning-card text-center p-4 bg-light rounded shadow-sm h-100">
+                        <div class="cleaning-icon mb-3">
+                            <i class="fas fa-home text-danger" style="font-size: 3rem;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Residential Cleaning</h5>
+                        <p class="text-muted">Apartment complexes, residential buildings, and housing facilities</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="cleaning-card text-center p-4 bg-light rounded shadow-sm h-100">
+                        <div class="cleaning-icon mb-3">
+                            <i class="fas fa-hospital text-danger" style="font-size: 3rem;"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Specialized Cleaning</h5>
+                        <p class="text-muted">Healthcare facilities, schools, and specialized environments</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Key Features -->
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="feature-highlight p-4 border-start border-danger border-4">
+                        <h4 class="fw-bold mb-3">Eco-Friendly Solutions</h4>
+                        <p class="text-muted">Environmentally responsible cleaning products and sustainable practices for a greener future.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-highlight p-4 border-start border-danger border-4">
+                        <h4 class="fw-bold mb-3">Flexible Scheduling</h4>
+                        <p class="text-muted">Customized cleaning schedules to minimize disruption to your business operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-5 bg-danger text-white">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">Our Cleaning Expertise</h2>
+                    <p class="lead">Trusted by hundreds of facilities across the region</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card text-center stagger-item">
+                        <div class="stat-icon mb-3">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="stat-number mb-2" data-target="200">0</div>
+                        <div class="stat-label">Facilities Cleaned</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card text-center stagger-item">
+                        <div class="stat-icon mb-3">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number mb-2" data-target="50">0</div>
+                        <div class="stat-label">Cleaning Professionals</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card text-center stagger-item">
+                        <div class="stat-icon mb-3">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-number mb-2" data-target="24">0</div>
+                        <div class="stat-label">Hour Service</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card text-center stagger-item">
+                        <div class="stat-icon mb-3">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="stat-number mb-2" data-target="10">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold text-dark mb-3">Our Cleaning & Janitorial Services</h2>
+                    <p class="lead text-muted">
+                        Comprehensive cleaning solutions with specialized expertise in facility maintenance and hygiene
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="service-card-large border-0 shadow-sm stagger-item h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4 bg-danger d-flex align-items-center justify-content-center">
+                                <i class="fas fa-broom text-white" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold">Daily Cleaning</h5>
+                                    <p class="card-text text-muted">
+                                        Regular daily cleaning services including dusting, vacuuming, and surface sanitization.
+                                    </p>
+                                    <ul class="list-unstyled text-muted">
+                                        <li><i class="fas fa-check text-danger me-2"></i>Surface cleaning</li>
+                                        <li><i class="fas fa-check text-danger me-2"></i>Floor maintenance</li>
+                                        <li><i class="fas fa-check text-danger me-2"></i>Sanitization</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-card-large border-0 shadow-sm stagger-item h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4 bg-danger d-flex align-items-center justify-content-center">
+                                <i class="fas fa-spray-can text-white" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold">Deep Cleaning</h5>
+                                    <p class="card-text text-muted">
+                                        Comprehensive deep cleaning services for thorough facility maintenance and restoration.
+                                    </p>
+                                    <ul class="list-unstyled text-muted">
+                                        <li><i class="fas fa-check text-danger me-2"></i>Carpet cleaning</li>
+                                        <li><i class="fas fa-check text-danger me-2"></i>Window cleaning</li>
+                                        <li><i class="fas fa-check text-danger me-2"></i>Upholstery cleaning</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-card-large border-0 shadow-sm stagger-item h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4 bg-danger d-flex align-items-center justify-content-center">
+                                <i class="fas fa-recycle text-white" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold">Waste Management</h5>
+                                    <p class="card-text text-muted">
+                                        Professional waste collection, segregation, and disposal services for clean facilities.
+                                    </p>
+                                    <ul class="list-unstyled text-muted">
+                                        <li><i class="fas fa-check text-danger me-2"></i>Waste collection</li>
+                                        <li><i class="fas fa-check text-danger me-2"></i>Recycling programs</li>
+                                        <li><i class="fas fa-check text-danger me-2"></i>Proper disposal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-card-large border-0 shadow-sm stagger-item h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4 bg-danger d-flex align-items-center justify-content-center">
+                                <i class="fas fa-leaf text-white" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold">Eco-Friendly Cleaning</h5>
+                                    <p class="card-text text-muted">
+                                        Sustainable cleaning solutions using environmentally friendly products and practices.
+                                    </p>
+                                    <ul class="list-unstyled text-muted">
+                                        <li><i class="fas fa-check text-danger me-2"></i>Green products</li>
+                                        <li><i class="fas fa-check text-danger me-2"></i>Sustainable practices</li>
+                                        <li><i class="fas fa-check text-danger me-2"></i>Eco-certified</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-card-large border-0 shadow-sm stagger-item h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4 bg-danger d-flex align-items-center justify-content-center">
+                                <i class="fas fa-virus-slash text-white" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold">Disinfection & Sanitization</h5>
+                                    <p class="card-text text-muted">
+                                        Advanced disinfection and sanitization services using hospital-grade products and techniques.
+                                    </p>
+                                    <ul class="list-unstyled text-muted">
+                                        <li><i class="fas fa-check text-danger me-2"></i>Hospital-grade disinfection</li>
+                                        <li><i class="fas fa-check text-danger me-2"></i>UV sanitization</li>
+                                        <li><i class="fas fa-check text-danger me-2"></i>Pathogen elimination</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-card-large border-0 shadow-sm stagger-item h-100">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-4 bg-danger d-flex align-items-center justify-content-center">
+                                <i class="fas fa-industry text-white" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-4">
+                                    <h5 class="card-title fw-bold">Industrial Cleaning</h5>
+                                    <p class="card-text text-muted">
+                                        Specialized industrial cleaning services for factories, warehouses, and manufacturing facilities.
+                                    </p>
+                                    <ul class="list-unstyled text-muted">
+                                        <li><i class="fas fa-check text-danger me-2"></i>Factory cleaning</li>
+                                        <li><i class="fas fa-check text-danger me-2"></i>Equipment cleaning</li>
+                                        <li><i class="fas fa-check text-danger me-2"></i>Safety compliance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-danger text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3 class="fw-bold mb-3">Ready for Professional Cleaning Services?</h3>
+                    <p class="lead mb-0">
+                        Get a comprehensive facility assessment and discover how our professional cleaning services can enhance your facility's hygiene and appearance.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="contact.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-calendar-check me-2"></i>Schedule Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <!-- Main Footer Content -->
+            <div class="row g-4 mb-4">
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-section">
+                        <h5 class="fw-bold mb-3" style="display: flex; align-items: center; gap: 0;">
+                            <img src="images/logo4.png" alt="AMW Logo" style="height: 50px; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); mix-blend-mode: color-dodge;">
+                            <span style="color: white; line-height: 50px;">AMW</span>
+                        </h5>
+                        <p class="text-muted mb-3">
+                            Your trusted partner in fire safety and facilities management for over 15 years. 
+                            We protect lives and property with innovative solutions and certified expertise.
+                        </p>
+
+                        <!-- Social Media -->
+                        <div class="social-links mt-3">
+                            <h6 class="fw-bold mb-2">Follow Us</h6>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fire Safety Services -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">Fire Safety Services</h6>
+                        <ul class="footer-links">
+                            <li><a href="services.html#fire-extinguishers">Fire Extinguishers</a></li>
+                            <li><a href="services.html#alarm-systems">Fire Alarm Systems</a></li>
+                            <li><a href="services.html#sprinklers">Sprinkler Systems</a></li>
+                            <li><a href="services.html#emergency-lighting">Emergency Lighting</a></li>
+                            <li><a href="services.html#fire-hydrants">Fire Hydrants</a></li>
+                            <li><a href="services.html#training">Safety Training</a></li>
+                            <li><a href="services.html#inspection">Fire Safety Inspection</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Facility Management Services -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">Facility Management</h6>
+                        <ul class="footer-links">
+                            <li><a href="services.html#hvac">HVAC Maintenance</a></li>
+                            <li><a href="services.html#electrical">Electrical Systems</a></li>
+                            <li><a href="services.html#plumbing">Plumbing Services</a></li>
+                            <li><a href="services.html#elevator">Elevator & Escalator</a></li>
+                            <li><a href="services.html#security">Security & Access Control</a></li>
+                            <li><a href="services.html#cleaning">Cleaning & Janitorial</a></li>
+                            <li><a href="services.html#pest-control">Pest Control</a></li>
+                            <li><a href="services.html#disinfection">Disinfection Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">All Services</a></li>
+                            <li><a href="vision.html">Our Vision</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="contactus.html">Get In Touch</a></li>
+                            <li><a href="services.html#emergency">Emergency Services</a></li>
+                            <li><a href="services.html#maintenance">Maintenance Plans</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">Contact Information</h6>
+                        <div class="contact-info">
+                            <div class="contact-item mb-3 p-2 rounded">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt text-danger me-3"></i>
+                                    <span class="text-muted small">C1 buidling
+                                        Office no 82 
+                                        United arab emirates</span>
+                                </div>
+                            </div>
+                            <div class="contact-item mb-3 p-2 rounded">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-phone text-danger me-3"></i>
+                                    <span class="text-muted small">+971 52 328 4847</span>
+                                </div>
+                            </div>
+                            <div class="contact-item mb-3 p-2 rounded">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-envelope text-danger me-3"></i>
+                                    <span class="text-muted small"> info@amw-fm.com </span>
+                                </div>
+                            </div>
+                            <div class="contact-item mb-3 p-2 rounded">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-clock text-danger me-3"></i>
+                                    <span class="text-muted small">24/7 Emergency Response</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="mb-0">&copy; 2025 AMW. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <!-- <button id="backToTop" class="btn btn-danger position-fixed d-none" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); console.log('HTML onclick triggered');" style="z-index: 9999; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); background-color: #dc3545 !important; cursor: pointer; bottom: 20px; right: 120px;">
+        <i class="fas fa-arrow-up" style="color: white !important;"></i>
+    </button> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // New Navbar Functionality
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-new');
+            if (navbar) {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+        });
+
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+        // Open mobile menu
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        // Close mobile menu
+        mobileMenuClose.addEventListener('click', function() {
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close mobile menu when clicking overlay
+        mobileMenuOverlay.addEventListener('click', function(e) {
+            if (e.target === mobileMenuOverlay) {
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Toggle submenus (first level)
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const hasSubmenu = this.nextElementSibling && this.nextElementSibling.classList.contains('mobile-submenu');
+                
+                if (hasSubmenu) {
+                    e.preventDefault();
+                    
+                    // Toggle current link active state
+                    this.classList.toggle('active');
+                    
+                    // Toggle submenu
+                    this.nextElementSibling.classList.toggle('active');
+                }
+            });
+        });
+
+        // Toggle sub-submenus (second level)
+        const mobileSubmenuLinks = document.querySelectorAll('.mobile-submenu-link');
+        mobileSubmenuLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const hasSubSubmenu = this.nextElementSibling && this.nextElementSibling.classList.contains('mobile-sub-submenu');
+                
+                if (hasSubSubmenu) {
+                    e.preventDefault();
+                    
+                    // Toggle current link active state
+                    this.classList.toggle('active');
+                    
+                    // Toggle sub-submenu
+                    this.nextElementSibling.classList.toggle('active');
+                }
+            });
+        });
+
+        // Close mobile menu on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && mobileMenuOverlay.classList.contains('active')) {
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body>
+</html> 

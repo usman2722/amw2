@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fire Safety & Facilities Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Emergency Call Button -->
+    <div class="floating-emergency-btn">
+        <a href="tel:+971523284847" class="emergency-call-btn">
+            <div class="btn-content">
+                <i class="fas fa-fire-extinguisher"></i>
+                <span class="btn-text">FIRE EMERGENCY</span>
+                <span class="btn-number">CALL NOW</span>
+            </div>
+            <div class="btn-shine"></div>
+        </a>
+    </div>
+
+    <!-- Floating WhatsApp Icon -->
+    <div class="floating-whatsapp-icon">
+        <a href="https://wa.me/971523284847" target="_blank" class="whatsapp-icon-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar-new">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Brand -->
+                <a href="index.html" class="navbar-brand-new">
+                    <img src="images/logo4.png" alt="AMW Logo" style="height: 50px; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); max-height: 50px; object-fit: contain;">
+                    <span>AMW</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <ul class="navbar-nav-desktop">
+                    <li class="nav-item-desktop">
+                        <a href="index.html" class="nav-link-desktop">Home</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="fire-safety-services-details.html" class="nav-link-desktop">Fire Safety</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="services.html" class="nav-link-desktop">Services</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="#" class="nav-link-desktop">Facility Management</a>
+                        <div class="dropdown-menu-desktop">
+                            <!-- Hard Services with submenu -->
+                            <div class="dropdown-item-desktop">
+                                <a href="#" class="dropdown-link d-flex justify-content-between align-items-center">
+                                    Hard Services
+                                    <i class="fas fa-chevron-right ms-2"></i>
+                                </a>
+                                <div class="dropdown-submenu-desktop">
+                                    <a href="mep-maintenance.html" class="dropdown-submenu-item-desktop">HVAC (Heating, Ventilation & Air Conditioning) Maintenance</a>
+                                    <a href="electrical-systems.html" class="dropdown-submenu-item-desktop">Electrical System Installation & Maintenance</a>
+                                    <a href="plumbing-sanitary.html" class="dropdown-submenu-item-desktop">Plumbing & Sanitary Contracting</a>
+                                    <a href="fire-safety-services-details.html" class="dropdown-submenu-item-desktop">Fire Fighting & Safety Equipment Installation</a>
+                                    <a href="building-fabric.html" class="dropdown-submenu-item-desktop">Building Fabric Maintenance (Walls, Doors, Windows, Roofs)</a>
+                                    <a href="elevator-escalator.html" class="dropdown-submenu-item-desktop">Elevator & Escalator Maintenance</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Soft Services with submenu -->
+                            <div class="dropdown-item-desktop">
+                                <a href="#" class="dropdown-link d-flex justify-content-between align-items-center">
+                                    Soft Services
+                                    <i class="fas fa-chevron-right ms-2"></i>
+                                </a>
+                                <div class="dropdown-submenu-desktop">
+                                    <a href="cleaning-janitorial.html" class="dropdown-submenu-item-desktop">Cleaning & Janitorial Services</a>
+                                    <a href="pest-control.html" class="dropdown-submenu-item-desktop">Pest Control</a>
+                                    <a href="security-access-control.html" class="dropdown-submenu-item-desktop">Security & Access Control</a>
+                                    <a href="disinfection-sanitization.html" class="dropdown-submenu-item-desktop">Disinfection & Sanitization</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="about.html" class="nav-link-desktop active">About</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="vision.html" class="nav-link-desktop">Vision</a>
+                    </li>
+                    <li class="nav-item-desktop">
+                        <a href="contact.html" class="nav-link-desktop">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Desktop Social Media -->
+                <div class="navbar-social-desktop">
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-panel">
+            <!-- Mobile Menu Header -->
+            <div class="mobile-menu-header">
+                <a href="index.html" class="mobile-menu-brand">
+                    <img src="images/logo4.png" alt="AMW Logo" style="height: 40px; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); max-height: 40px; object-fit: contain;">
+                    <span>AMW</span>
+                </a>
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Navigation -->
+            <ul class="mobile-menu-nav">
+                <li class="mobile-menu-item">
+                    <a href="index.html" class="mobile-menu-link">Home</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="fire-safety-services-details.html" class="mobile-menu-link">Fire Safety</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="services.html" class="mobile-menu-link">Services</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link">
+                        Facility Management
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="mobile-submenu">
+                        <div class="mobile-submenu-item">
+                            <a href="#" class="mobile-submenu-link">
+                                Hard Services
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="mobile-sub-submenu">
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="mep-maintenance.html" class="mobile-sub-submenu-link">HVAC (Heating, Ventilation & Air Conditioning) Maintenance</a>
+                                </div>
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="electrical-systems.html" class="mobile-sub-submenu-link">Electrical System Installation & Maintenance</a>
+                                </div>
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="plumbing-sanitary.html" class="mobile-sub-submenu-link">Plumbing & Sanitary Contracting</a>
+                                </div>
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="fire-safety-services-details.html" class="mobile-sub-submenu-link">Fire Fighting & Safety Equipment Installation</a>
+                                </div>
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="building-fabric.html" class="mobile-sub-submenu-link">Building Fabric Maintenance (Walls, Doors, Windows, Roofs)</a>
+                                </div>
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="elevator-escalator.html" class="mobile-sub-submenu-link">Elevator & Escalator Maintenance</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-submenu-item">
+                            <a href="#" class="mobile-submenu-link">
+                                Soft Services
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="mobile-sub-submenu">
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="cleaning-janitorial.html" class="mobile-sub-submenu-link">Cleaning & Janitorial Services</a>
+                                </div>
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="pest-control.html" class="mobile-sub-submenu-link">Pest Control</a>
+                                </div>
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="security-access-control.html" class="mobile-sub-submenu-link">Security & Access Control</a>
+                                </div>
+                                <div class="mobile-sub-submenu-item">
+                                    <a href="disinfection-sanitization.html" class="mobile-sub-submenu-link">Disinfection & Sanitization</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="about.html" class="mobile-menu-link active">About</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="vision.html" class="mobile-menu-link">Vision</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="contact.html" class="mobile-menu-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Mobile Social Media -->
+            <div class="mobile-social">
+                <div class="mobile-social-header">
+                    <h6 style="color: white; margin: 0; padding: 1rem 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">Follow Us</h6>
+                </div>
+                <div class="mobile-social-links" style="padding: 0 1.5rem 1.5rem; display: flex; gap: 1rem;">
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="nav-social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Banner Section -->
+    <section class="about-banner-section">
+        <div class="banner-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="display-3 fw-bold text-white mb-4">About AMW</h1>
+                        <p class="lead text-white mb-4">
+                            Your trusted partner in fire safety and facilities management for over 15 years
+                        </p>
+                        <div class="banner-stats">
+                            <div class="row g-4">
+                                <div class="col-md-3">
+                                    <div class="stat-item">
+                                        <h3 class="fw-bold text-white counter" data-target="15">0</h3>
+                                        <p class="text-white-50 mb-0">Years Experience</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="stat-item">
+                                        <h3 class="fw-bold text-white counter" data-target="500">0</h3>
+                                        <p class="text-white-50 mb-0">Clients Served</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="stat-item">
+                                        <h3 class="fw-bold text-white">24/7</h3>
+                                        <p class="text-white-50 mb-0">Emergency Response</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="stat-item">
+                                        <h3 class="fw-bold text-white counter" data-target="100">0</h3>
+                                        <p class="text-white-50 mb-0">% Satisfaction</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <!-- <section class="page-header bg-danger text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-3">About FireSafe Pro</h1>
+                    <p class="lead mb-0">
+                        Your trusted partner in fire safety and facilities management for over 15 years
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Our Story -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-dark mb-4">Our Story</h2>
+                    <p class="lead text-muted mb-4">
+                        AMW, established in 2008 and headquartered in Dubai, United Arab Emirates, is a trusted provider of Integrated Facilities Management and Technical Services.
+                    </p>
+                    <p class="text-muted mb-4">
+                        Over the years, we've grown into a respected organization known for operational excellence, innovation, and delivering tailored solutions across commercial, residential, industrial, and public sector projects.
+                    </p>
+                    <p class="text-muted mb-4">
+                        We offer a full spectrum of services—from routine maintenance to complete facilities management—designed to enhance the performance and value of our clients' assets.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center stagger-item">
+                                <i class="fas fa-calendar-alt text-danger me-2"></i>
+                                <span class="fw-bold">Established 2008</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center stagger-item">
+                                <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                                <span class="fw-bold">Dubai, UAE</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center stagger-item">
+                                <i class="fas fa-building text-danger me-2"></i>
+                                <span class="fw-bold">Integrated Services</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center stagger-item">
+                                <i class="fas fa-star text-danger me-2"></i>
+                                <span class="fw-bold">Operational Excellence</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="images/building.jpg" alt="AMW Building" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Mission -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-dark mb-4">Our Mission</h2>
+                    <p class="lead text-muted mb-4">
+                        At AMW, we are committed to protecting lives and property through innovative fire safety solutions and comprehensive facilities management services.
+                    </p>
+                    <p class="text-muted mb-4">
+                        Founded in 2008, we have built our reputation on reliability, expertise, and unwavering commitment to safety. Our team of certified professionals works tirelessly to ensure that every client receives the highest level of service and protection.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center stagger-item">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span class="fw-bold counter" data-target="15">0</span><span class="fw-bold">+ Years Experience</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center stagger-item">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span class="fw-bold counter" data-target="500">0</span><span class="fw-bold">+ Clients Served</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center stagger-item">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span class="fw-bold">24/7 Emergency Response</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center stagger-item">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span class="fw-bold counter" data-target="100">0</span><span class="fw-bold">% Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-5">
+                            <h3 class="fw-bold text-dark mb-4">Why Choose AMW?</h3>
+                            <div class="mb-4">
+                                <h5 class="fw-bold text-danger">
+                                    <i class="fas fa-shield-alt me-2"></i>Certified & Licensed
+                                </h5>
+                                <p class="text-muted">All our technicians are certified and licensed by state and national fire safety organizations.</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5 class="fw-bold text-danger">
+                                    <i class="fas fa-clock me-2"></i>Rapid Response
+                                </h5>
+                                <p class="text-muted">Emergency response times under 30 minutes for critical situations.</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5 class="fw-bold text-danger">
+                                    <i class="fas fa-tools me-2"></i>Latest Technology
+                                </h5>
+                                <p class="text-muted">State-of-the-art equipment and cutting-edge fire safety technology.</p>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold text-danger">
+                                    <i class="fas fa-handshake me-2"></i>Trusted Partner
+                                </h5>
+                                <p class="text-muted">Long-term partnerships built on trust, reliability, and exceptional service.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employee Chart Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold text-dark mb-3">Our Team Strength</h2>
+                    <p class="lead text-muted">
+                        Meet our dedicated team of professionals committed to excellence in fire safety and facility management
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold text-dark mb-4">Employee Distribution</h4>
+                            <div class="employee-chart-container">
+                                <div class="chart-legend mb-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="legend-item d-flex align-items-center mb-2">
+                                                <div class="legend-color" style="background: linear-gradient(135deg, #dc3545, #c82333); width: 20px; height: 20px; border-radius: 4px; margin-right: 10px;"></div>
+                                                <span class="fw-bold">Technical Staff</span>
+                                            </div>
+                                            <div class="legend-item d-flex align-items-center mb-2">
+                                                <div class="legend-color" style="background: linear-gradient(135deg, #28a745, #20c997); width: 20px; height: 20px; border-radius: 4px; margin-right: 10px;"></div>
+                                                <span class="fw-bold">Support Staff</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="legend-item d-flex align-items-center mb-2">
+                                                <div class="legend-color" style="background: linear-gradient(135deg, #007bff, #0056b3); width: 20px; height: 20px; border-radius: 4px; margin-right: 10px;"></div>
+                                                <span class="fw-bold">Management</span>
+                                            </div>
+                                            <div class="legend-item d-flex align-items-center mb-2">
+                                                <div class="legend-color" style="background: linear-gradient(135deg, #ffc107, #e0a800); width: 20px; height: 20px; border-radius: 4px; margin-right: 10px;"></div>
+                                                <span class="fw-bold">Field Engineers</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="employee-stats">
+                                    <div class="row g-3">
+                                        <div class="col-md-3 col-6">
+                                            <div class="stat-card text-center p-3 rounded shadow" style="background: linear-gradient(135deg, #ffe8e8 0%, #ffd6d6 100%); border-left: 4px solid #dc3545;">
+                                                <h3 class="fw-bold counter text-danger" data-target="45" style="font-size: 2.5rem;">0</h3>
+                                                <p class="mb-0 text-dark fw-bold" style="font-size: 1rem;">Technical Staff</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="stat-card text-center p-3 rounded shadow" style="background: linear-gradient(135deg, #e8f5e8 0%, #d6f0d6 100%); border-left: 4px solid #28a745;">
+                                                <h3 class="fw-bold counter text-success" data-target="25" style="font-size: 2.5rem;">0</h3>
+                                                <p class="mb-0 text-dark fw-bold" style="font-size: 1rem;">Support Staff</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="stat-card text-center p-3 rounded shadow" style="background: linear-gradient(135deg, #e8f2ff 0%, #d6e7ff 100%); border-left: 4px solid #007bff;">
+                                                <h3 class="fw-bold counter text-primary" data-target="15" style="font-size: 2.5rem;">0</h3>
+                                                <p class="mb-0 text-dark fw-bold" style="font-size: 1rem;">Management</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="stat-card text-center p-3 rounded shadow" style="background: linear-gradient(135deg, #fff8e8 0%, #fff2d6 100%); border-left: 4px solid #ffc107;">
+                                                <h3 class="fw-bold counter text-warning" data-target="30" style="font-size: 2.5rem;">0</h3>
+                                                <p class="mb-0 text-dark fw-bold" style="font-size: 1rem;">Field Engineers</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-lg h-100">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold text-dark mb-4">Total Team</h4>
+                            <div class="text-center">
+                                <div class="total-employees mb-4">
+                                    <h1 class="display-1 fw-bold text-danger counter" data-target="115">0</h1>
+                                    <p class="lead text-muted">Dedicated Professionals</p>
+                                </div>
+                                <div class="team-highlights">
+                                    <div class="highlight-item d-flex align-items-center mb-3">
+                                        <i class="fas fa-certificate text-success me-3"></i>
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Certified Professionals</h6>
+                                            <small class="text-muted">All technicians certified</small>
+                                        </div>
+                                    </div>
+                                    <div class="highlight-item d-flex align-items-center mb-3">
+                                        <i class="fas fa-clock text-primary me-3"></i>
+                                        <div>
+                                            <h6 class="fw-bold mb-0">24/7 Availability</h6>
+                                            <small class="text-muted">Round-the-clock support</small>
+                                        </div>
+                                    </div>
+                                    <div class="highlight-item d-flex align-items-center mb-3">
+                                        <i class="fas fa-globe text-warning me-3"></i>
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Multi-Lingual</h6>
+                                            <small class="text-muted">International team</small>
+                                        </div>
+                                    </div>
+                                    <div class="highlight-item d-flex align-items-center">
+                                        <i class="fas fa-graduation-cap text-info me-3"></i>
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Continuous Training</h6>
+                                            <small class="text-muted">Regular skill updates</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold text-dark mb-3">Our Certifications</h2>
+                    <p class="lead text-muted">
+                        We maintain the highest standards of professional certification and compliance
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="certification-icon mb-3">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h5 class="fw-bold">NFPA Certified</h5>
+                            <p class="text-muted">National Fire Protection Association certification for fire safety standards.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="certification-icon mb-3">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h5 class="fw-bold">ISO 9001:2015</h5>
+                            <p class="text-muted">International quality management system certification.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="certification-icon mb-3">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h5 class="fw-bold">State Licensed</h5>
+                            <p class="text-muted">Licensed by state fire marshal and safety authorities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="certification-icon mb-3">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h5 class="fw-bold">BBB Accredited</h5>
+                            <p class="text-muted">Better Business Bureau accredited with A+ rating.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold text-dark mb-3">Our Leadership Team</h2>
+                    <p class="lead text-muted">
+                        Experienced professionals dedicated to your safety and success
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="team-avatar mb-3">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h5 class="fw-bold">Michael Johnson</h5>
+                            <p class="text-danger fw-bold">CEO & Founder</p>
+                            <p class="text-muted">20+ years in fire safety with extensive experience in industrial and commercial facilities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="team-avatar mb-3">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h5 class="fw-bold">Sarah Williams</h5>
+                            <p class="text-danger fw-bold">Operations Director</p>
+                            <p class="text-muted">Certified fire safety engineer with expertise in system design and implementation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="team-avatar mb-3">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h5 class="fw-bold">David Chen</h5>
+                            <p class="text-danger fw-bold">Technical Manager</p>
+                            <p class="text-muted">Specialist in fire alarm systems and emergency response coordination.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-danger text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3 class="fw-bold mb-3">Ready to Work With Us?</h3>
+                    <p class="lead mb-0">
+                        Join hundreds of satisfied clients who trust FireSafe Pro with their fire safety needs.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="contact.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-phone me-2"></i>Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <!-- Main Footer Content -->
+            <div class="row g-4 mb-4">
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-section">
+                        <h5 class="fw-bold mb-3" style="display: flex; align-items: center; gap: 0;">
+                            <img src="images/logo4.png" alt="AMW Logo" style="height: 50px; filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); mix-blend-mode: color-dodge;">
+                            <span style="color: white; line-height: 50px;">AMW</span>
+                        </h5>
+                        <p class="text-muted mb-3">
+                            Your trusted partner in fire safety and facilities management for over 15 years. 
+                            We protect lives and property with innovative solutions and certified expertise.
+                        </p>
+
+                        <!-- Social Media -->
+                        <div class="social-links mt-3">
+                            <h6 class="fw-bold mb-2">Follow Us</h6>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fire Safety Services -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">Fire Safety Services</h6>
+                        <ul class="footer-links">
+                            <li><a href="services.html#fire-extinguishers">Fire Extinguishers</a></li>
+                            <li><a href="services.html#alarm-systems">Fire Alarm Systems</a></li>
+                            <li><a href="services.html#sprinklers">Sprinkler Systems</a></li>
+                            <li><a href="services.html#emergency-lighting">Emergency Lighting</a></li>
+                            <li><a href="services.html#fire-hydrants">Fire Hydrants</a></li>
+                            <li><a href="services.html#training">Safety Training</a></li>
+                            <li><a href="services.html#inspection">Fire Safety Inspection</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Facility Management Services -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">Facility Management</h6>
+                        <ul class="footer-links">
+                            <li><a href="services.html#hvac">HVAC Maintenance</a></li>
+                            <li><a href="services.html#electrical">Electrical Systems</a></li>
+                            <li><a href="services.html#plumbing">Plumbing Services</a></li>
+                            <li><a href="services.html#elevator">Elevator & Escalator</a></li>
+                            <li><a href="services.html#security">Security & Access Control</a></li>
+                            <li><a href="services.html#cleaning">Cleaning & Janitorial</a></li>
+                            <li><a href="services.html#pest-control">Pest Control</a></li>
+                            <li><a href="services.html#disinfection">Disinfection Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">All Services</a></li>
+                            <li><a href="vision.html">Our Vision</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="contactus.html">Get In Touch</a></li>
+                            <li><a href="services.html#emergency">Emergency Services</a></li>
+                            <li><a href="services.html#maintenance">Maintenance Plans</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="fw-bold mb-3">Contact Information</h6>
+                        <div class="contact-info">
+                            <div class="contact-item mb-3 p-2 rounded">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-map-marker-alt text-danger me-3"></i>
+                                    <span class="text-muted small">C1 buidling
+                                        Office no 82 
+                                        United arab emirates</span>
+                                </div>
+                            </div>
+                            <div class="contact-item mb-3 p-2 rounded">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-phone text-danger me-3"></i>
+                                    <span class="text-muted small">+971 52 328 4847</span>
+                                </div>
+                            </div>
+                            <div class="contact-item mb-3 p-2 rounded">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-envelope text-danger me-3"></i>
+                                    <span class="text-muted small"> info@amw-fm.com </span>
+                                </div>
+                            </div>
+                            <div class="contact-item mb-3 p-2 rounded">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-clock text-danger me-3"></i>
+                                    <span class="text-muted small">24/7 Emergency Response</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="mb-0">&copy; 2025 AMW. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <!-- <button id="backToTop" class="btn btn-danger position-fixed d-none" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); console.log('HTML onclick triggered');" style="z-index: 9999; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); background-color: #dc3545 !important; cursor: pointer; bottom: 20px; right: 120px;">
+        <i class="fas fa-arrow-up" style="color: white !important;"></i>
+    </button> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // New Navbar Functionality
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-new');
+            if (navbar) {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+        });
+
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+        // Open mobile menu
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        // Close mobile menu
+        mobileMenuClose.addEventListener('click', function() {
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close mobile menu when clicking overlay
+        mobileMenuOverlay.addEventListener('click', function(e) {
+            if (e.target === mobileMenuOverlay) {
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Toggle submenus (first level)
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const hasSubmenu = this.nextElementSibling && this.nextElementSibling.classList.contains('mobile-submenu');
+                
+                if (hasSubmenu) {
+                    e.preventDefault();
+                    
+                    // Toggle current link active state
+                    this.classList.toggle('active');
+                    
+                    // Toggle submenu
+                    this.nextElementSibling.classList.toggle('active');
+                }
+            });
+        });
+
+        // Toggle sub-submenus (second level)
+        const mobileSubmenuLinks = document.querySelectorAll('.mobile-submenu-link');
+        mobileSubmenuLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const hasSubSubmenu = this.nextElementSibling && this.nextElementSibling.classList.contains('mobile-sub-submenu');
+                
+                if (hasSubSubmenu) {
+                    e.preventDefault();
+                    
+                    // Toggle current link active state
+                    this.classList.toggle('active');
+                    
+                    // Toggle sub-submenu
+                    this.nextElementSibling.classList.toggle('active');
+                }
+            });
+        });
+
+        // Close mobile menu on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && mobileMenuOverlay.classList.contains('active')) {
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body>
+</html> 
