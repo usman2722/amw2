@@ -930,6 +930,7 @@ html {
 
 .about-banner-section h1 {
     animation: fadeInDown 1s ease-out;
+    margin-top: 100px;
 }
 
 .about-banner-section .lead {
@@ -4645,6 +4646,20 @@ footer a:hover {
     display: block;
     transition: all 0.3s ease;
     font-weight: 500;
+}
+
+/* Style for dropdown arrow icon */
+.nav-link-desktop .fa-chevron-down {
+    font-size: 0.7rem;
+    margin-left: 0.25rem;
+    transition: transform 0.3s ease;
+    opacity: 0.8;
+}
+
+/* Rotate arrow when dropdown is open */
+.nav-item-desktop:hover .nav-link-desktop .fa-chevron-down {
+    transform: rotate(180deg);
+    opacity: 1;
 }
 
 .nav-link-desktop:hover,
